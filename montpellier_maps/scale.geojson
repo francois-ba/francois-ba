@@ -1,0 +1,44 @@
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "scale 200 m"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        3.91817084313,
+                        43.50461240811
+                    ],
+                    [
+                        3.91569255710,
+                        43.50461235364
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "scale 2 km"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        3.91525259972,
+                        43.50872107355
+                    ],
+                    [
+                        3.94005766869,
+                        43.50859657264
+                    ]
+                ]
+            }
+        }
+    ]
+}
