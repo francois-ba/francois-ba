@@ -22,7 +22,7 @@ fig = plotter.get_fig(boundaries_geo, veto_geo, tram_coords)
 app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 
 app.layout = dbc.Container([
-    html.H1(children='Mon Chat et moi à Montpellier'),
+    html.H1(children='MC&M Montpellier'),
 
     # Row container to hold radio items and graph
     dbc.Row([

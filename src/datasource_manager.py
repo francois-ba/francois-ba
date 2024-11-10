@@ -4,7 +4,7 @@ from scipy import stats
 import geopandas as gpd
 
 
-path_data = '../montpellier_maps/'
+path_data = '../data/'
 
 sel_communes = ['Mauguio', 'Castelnau-le-Lez', 'Lavérune', 'Juvignac',
                 'Assas', 'Lattes', 'Saint-Gély-du-Fesc', 'Saint-Brès',
