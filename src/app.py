@@ -1,11 +1,10 @@
 import json
-import dash
 from dash import Dash, dcc, html, Input, Output, callback, State, dash_table
 import dash_bootstrap_components as dbc
 
 import datasource_manager
 import plotter
-
+import geo_utils
 
 # data feeding
 revenue_df = datasource_manager.get_revenue()
@@ -13,13 +12,12 @@ population_df = datasource_manager.get_population()
 
 boundaries_geo = datasource_manager.get_boundary(revenue_df.copy(), population_df)
 veto_geo = datasource_manager.get_veto()
+candidats = datasource_manager.get_candidats()
 tram_coords = datasource_manager.get_tram()
 
 center={"lat": 43.64, "lon": 3.95}
-zoom = 11
-
-#figure plotting
-#fig = plotter.get_fig(boundaries_geo, veto_geo, tram_coords)
+init_zoom = 11
+current_zoom = init_zoom
 
 # Initialize the app
 
@@ -55,15 +53,14 @@ app.layout = dbc.Container([
                 #dcc.Store(id='coordinates_id')
                 ]
 ),
-            width=2  # Adjust width to fit your needs
+            width=2
         ),
 
         # Column for the Graph
         dbc.Col(
-            dcc.Graph(id='controls-and-graph'),
-            width=9  # Adjust width to ensure alignment
-        )
-    ], align="center")  # Vertically center the row contents
+            dcc.Graph(id='controls-and-graph'), width=9)
+    ],
+        align="center")
 ])
 
 
@@ -73,17 +70,26 @@ app.layout = dbc.Container([
     Input('controls-and-radio-item', 'value')
 )
 def update_graph(metric):
-    fig = plotter.get_fig(boundaries_geo, veto_geo, tram_coords, metric)
+    fig = plotter.get_fig(boundaries_geo, veto_geo, candidats, tram_coords, metric)
     return fig
 
 @app.callback(
-    Output('textarea_coordinates', 'value'),
+    [Output('textarea_coordinates', 'value')],
     Input('controls-and-graph', 'clickData'),
     #State('textarea_coordinates', 'value')
 )
 def display_click_data(clickData):
     if clickData is not None:
-        return str(round(clickData['points'][0]['bbox']['x0'], 5))
+        #print(current_zoom)
+        lon = clickData['points'][0]['lon']
+        lat = clickData['points'][0]['lat']
+        geo_utils.influence_area_from_point(lon, lat, boundaries_geo)
+
+        #x = (clickData['points'][0]['bbox']['x0']+clickData['points'][0]['bbox']['y1']) / 2
+        #y = (clickData['points'][0]['bbox']['y0'] + clickData['points'][0]['bbox']['y1']) / 2
+    #     if lon is not None and lat is not None:
+    #         return [','.join([str(round(i, 5)) for i in [lon,lat]])]
+    return ['0, 0']
 
 # Callback to update the zoom level display
 @app.callback(
@@ -92,17 +98,7 @@ def display_click_data(clickData):
 )
 def update_zoom(relayout_data):
     if relayout_data and 'mapbox.zoom' in relayout_data:
-        zoom_level = relayout_data['mapbox.zoom']
-        return f"Current Zoom Level: {zoom_level:.2f}"
-    return "Zoom Level: Not available"
-
-# @callback(Output('coordinates_id', 'children'),
-#               [Input('controls-and-graph', 'clickData')])
-# def click_coord(e):
-#     if e is not None:
-#         return json.dumps(e)
-#     else:
-#         return "-"
+        current_zoom = relayout_data['mapbox.zoom']
 
 if __name__ == '__main__':
     app.run_server(debug=True)

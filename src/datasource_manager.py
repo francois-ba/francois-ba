@@ -3,6 +3,14 @@ import numpy as np
 from scipy import stats
 import geopandas as gpd
 
+""""
+Data sources
+- boundaries_clean.geojson
+- clinics_points.geojson
+- trams_clean.geojson
+- revenue.csv
+- population.csv
+"""
 
 path_data = '../data/'
 
@@ -65,6 +73,10 @@ def get_veto(filename='clinics_points.geojson'):
     veto_df = veto_df[veto_df.amenity == 'veterinary'][['amenity', 'name', 'geometry']]
     veto_df['geometry'] = veto_df.geometry.centroid
     return veto_df
+
+def get_candidats(filename='clinic_candidats.geojson'):
+    candidat_df = gpd.read_file(path_data + filename)
+    return candidat_df
 
 def get_tram(filename='trams_clean.geojson'):
     tram_df = gpd.read_file(path_data + filename)

@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 
 
 
-def get_fig(boundary_layer, veto_layer, tram_layer, metric="revenue"):
+def get_fig(boundary_layer, veto_layer, candidat_layer, tram_layer, metric="revenue"):
     metric_mapping = {
         'revenue': {'color':'revenue_avg',
                     'hover_data': 'revenue_avg'},
@@ -42,6 +42,19 @@ def get_fig(boundary_layer, veto_layer, tram_layer, metric="revenue"):
         ),
         text=veto_layer['name'],
         name='veto',
+        showlegend=False
+    ))
+
+    fig.add_trace(go.Scattermapbox(
+        lon=candidat_layer.geometry.x,
+        lat=candidat_layer.geometry.y,
+        mode='markers',
+        marker=go.scattermapbox.Marker(
+            size=10,
+            color='orange'
+        ),
+        text=candidat_layer['name'],
+        name='Mon chat et moi',
         showlegend=False
     ))
 
