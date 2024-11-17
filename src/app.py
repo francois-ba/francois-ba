@@ -1,10 +1,13 @@
 import json
 from dash import Dash, dcc, html, Input, Output, callback, State, dash_table
 import dash_bootstrap_components as dbc
+import pandas as pd
 
 import datasource_manager
 import plotter
 import geo_utils
+from candidat import Candidat
+from competition import Competition
 
 # data feeding
 revenue_df = datasource_manager.get_revenue()
@@ -18,6 +21,8 @@ tram_coords = datasource_manager.get_tram()
 center={"lat": 43.64, "lon": 3.95}
 init_zoom = 11
 current_zoom = init_zoom
+
+candidat_size = 1.5
 
 # Initialize the app
 
@@ -80,25 +85,26 @@ def update_graph(metric):
 )
 def display_click_data(clickData):
     if clickData is not None:
-        #print(current_zoom)
         lon = clickData['points'][0]['lon']
         lat = clickData['points'][0]['lat']
-        geo_utils.influence_area_from_point(lon, lat, boundaries_geo)
-
-        #x = (clickData['points'][0]['bbox']['x0']+clickData['points'][0]['bbox']['y1']) / 2
-        #y = (clickData['points'][0]['bbox']['y0'] + clickData['points'][0]['bbox']['y1']) / 2
-    #     if lon is not None and lat is not None:
-    #         return [','.join([str(round(i, 5)) for i in [lon,lat]])]
-    return ['0, 0']
+        candidat = Candidat(lon, lat, candidat_size).get_impacted_municipality(boundaries_geo)
+        ratio_vet_pop_with_competition = Competition(veto_geo, candidat).select_direct_competitors().ratio_vet_population()
+        ratio_vet_pop_without_competition = candidat.ratio_vet_population(ratio_vet_pop_with_competition)
+        ratio_vet_pop  = pd.concat([ratio_vet_pop_without_competition,
+                                                     ratio_vet_pop_with_competition[['weighted_ratio_vet_population','competition_area']]
+                                                     ])
+        avg_potential_population = ratio_vet_pop.weighted_ratio_vet_population.sum() / ratio_vet_pop.competition_area.sum()
+        return [f'{int(round(avg_potential_population, 0))}']
+    return ['0']
 
 # Callback to update the zoom level display
-@app.callback(
-    Output('zoom-output', 'children'),
-    Input('controls-and-graph', 'relayoutData')
-)
-def update_zoom(relayout_data):
-    if relayout_data and 'mapbox.zoom' in relayout_data:
-        current_zoom = relayout_data['mapbox.zoom']
+# @app.callback(
+#     Output('zoom-output', 'children'),
+#     Input('controls-and-graph', 'relayoutData')
+# )
+# def update_zoom(relayout_data):
+#     if relayout_data and 'mapbox.zoom' in relayout_data:
+#         current_zoom = relayout_data['mapbox.zoom']
 
 if __name__ == '__main__':
     app.run_server(debug=True)

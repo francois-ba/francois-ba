@@ -5,14 +5,14 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Clinique Vétérinaire de Baillargues",
-                "amenity": "veterinary"
+                "amenity": "veterinary",
+                "name": "Clinique Vétérinaire des Voiles Blanches"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    3.99943542425,
-                    43.65411461698
+                    4.08771002425,
+                    43.55907882017
                 ]
             }
         },
@@ -20,165 +20,13 @@
             "type": "Feature",
             "properties": {
                 "amenity": "veterinary",
-                "name": "Clinique vétérinaire La Cardabelle"
+                "name": "Clinique vétérinaire Saint-Hubert"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    3.90442722425,
-                    43.65912871680
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "centre commercial couronne",
-                "amenity": "veterinary"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3.98388242425,
-                    43.67506501627
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "veterinary",
-                "name": "Coucharrière Julia"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    4.01378382425,
-                    43.62750121787
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "veterinary"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    4.00310212425,
-                    43.61648071824
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "veterinary"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3.88796202425,
-                    43.59508371896
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "veterinary",
-                "name": "Clinique Vétérinaire Croix d'Argent"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3.85863899067,
-                    43.59193540380
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "veterinary",
-                "name": "Melgueil Vétérinaire"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    4.01637852425,
-                    43.61883941815
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Clinique vetochat",
-                "amenity": "veterinary"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3.90201329112,
-                    43.59936722515
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "veterinary",
-                "name": "Vétérinaire"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3.86326592425,
-                    43.68985951578
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "veterinary",
-                "name": "Olivier Bouzigues vétérinaire"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3.83591102425,
-                    43.57932271950
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "veterinary",
-                "name": "Clinique Vétérinaire du Port"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    4.07831422425,
-                    43.55921752016
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Clinique vétérinaire Orthovet",
-                "amenity": "veterinary"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3.82960242425,
-                    43.57493211964
+                    3.89754722425,
+                    43.58014641946
                 ]
             }
         },
@@ -201,28 +49,83 @@
             "type": "Feature",
             "properties": {
                 "amenity": "veterinary",
-                "name": "Cabinet Vétérinaire de la Clémentide"
+                "name": "Clinique Vétérinaire"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    3.83856442425,
-                    43.65104151708
+                    3.87973282425,
+                    43.56438901999
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "addr:city": "Montpellier",
-                "name": "Clinique aiguelongue",
+                "amenity": "veterinary",
+                "name": "Clinique vétérinaire Argos Gambetta"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.87418032425,
+                    43.60564521861
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "veterinary",
+                "name": "Clinique Vétérinaire Croix d'Argent"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.85863899067,
+                    43.59193540380
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Clinique vétérinaire Vetocia",
                 "amenity": "veterinary"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    3.87765347421,
-                    43.62585961686
+                    3.82536392425,
+                    43.61762981821
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "veterinary",
+                "name": "Vétérinaire"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.86326592425,
+                    43.68985951578
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cabinet vétérinaire de Saint-Brès",
+                "amenity": "veterinary"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.03910492425,
+                    43.66662951655
                 ]
             }
         },
@@ -244,29 +147,14 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Clinique Vétérinaire du Crès",
+                "name": "centre commercial couronne",
                 "amenity": "veterinary"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    3.94344542425,
-                    43.64124871741
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "addr:city": "Montpellier",
-                "amenity": "veterinary",
-                "name": "City veto"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3.89913260400,
-                    43.59822507880
+                    3.98388242425,
+                    43.67506501627
                 ]
             }
         },
@@ -287,29 +175,115 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Clinique vétérinaire Argos Gambetta",
-                "amenity": "veterinary"
+                "amenity": "veterinary",
+                "name": "Clinique vétérinaire des Garrigues"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    3.87418032425,
-                    43.60564521861
+                    3.81013512425,
+                    43.61447191831
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "addr:city": "Montpellier",
-                "amenity": "veterinary",
-                "name": "Clinique Pompignane"
+                "amenity": "veterinary"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    3.89737843394,
-                    43.61435292244
+                    3.88796202425,
+                    43.59508371896
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "veterinary",
+                "name": "Clinique vétérinaire du Corum",
+                "effectif": "2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.88376272425,
+                    43.61401711832
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "veterinary",
+                "name": "Clinique vétérinaire Orthovet"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.82960242425,
+                    43.57493211964
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Clinique aiguelongue",
+                "amenity": "veterinary",
+                "effectif": "5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.87765347421,
+                    43.62585961686
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "veterinary",
+                "name": "vetocia",
+                "effectif": "3"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.90147041076,
+                    43.62609258712
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "veterinary",
+                "name": "Clinique vétérinaire La Cardabelle",
+                "effectif": "2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.90442722425,
+                    43.65912871680
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "veterinary",
+                "name": "Cabinet vétérinaire"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.80266862425,
+                    43.64621061724
                 ]
             }
         },
@@ -330,29 +304,15 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Clinique vétérinaire Vetocia",
-                "amenity": "veterinary"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3.82536392425,
-                    43.61762981821
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Okivet",
                 "amenity": "veterinary",
-                "addr:city": "Montpellier"
+                "name": "Clinique vetochat",
+                "effectif": "2"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    3.90023230970,
-                    43.61039904583
+                    3.90201329112,
+                    43.59936722515
                 ]
             }
         },
@@ -360,7 +320,8 @@
             "type": "Feature",
             "properties": {
                 "amenity": "veterinary",
-                "name": "Clinique Vétérinaire"
+                "name": "Clinique Vétérinaire Clapier",
+                "effectif": "4"
             },
             "geometry": {
                 "type": "Point",
@@ -374,13 +335,13 @@
             "type": "Feature",
             "properties": {
                 "amenity": "veterinary",
-                "name": "Clinique vétérinaire du Corum"
+                "name": "Clinique Vétérinaire du Port"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    3.88376272425,
-                    43.61401711832
+                    4.07831422425,
+                    43.55921752016
                 ]
             }
         },
@@ -388,13 +349,99 @@
             "type": "Feature",
             "properties": {
                 "amenity": "veterinary",
-                "name": "Clinique Vétérinaire des Voiles Blanches"
+                "name": "Aragon"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    4.08771002425,
-                    43.55907882017
+                    3.90368862425,
+                    43.57031241980
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cabinet Giraud",
+                "amenity": "veterinary"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.85769012425,
+                    43.61455941831
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "City veto",
+                "amenity": "veterinary",
+                "addr:city": "Montpellier"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.89913260400,
+                    43.59822507880
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "veterinary"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.00310212425,
+                    43.61648071824
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Clinique Vétérinaire Les Patounes",
+                "amenity": "veterinary",
+                "effectif": "1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.92904152425,
+                    43.63715371755
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "veterinary",
+                "name": "Clinique Pompignane",
+                "effectif": "2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.89737843394,
+                    43.61435292244
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "veterinary",
+                "name": "Melgueil Vétérinaire"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.01637852425,
+                    43.61883941815
                 ]
             }
         },
@@ -429,55 +476,27 @@
             "type": "Feature",
             "properties": {
                 "amenity": "veterinary",
-                "name": "Aragon"
+                "name": "Cabinet Vétérinaire de la Clémentide"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    3.90368862425,
-                    43.57031241980
+                    3.83856442425,
+                    43.65104151708
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "name": "Cabinet vétérinaire de Saint-Brès",
+                "name": "Clinique Vétérinaire de Baillargues",
                 "amenity": "veterinary"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    4.03910492425,
-                    43.66662951655
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Clinique vétérinaire Saint-Hubert",
-                "amenity": "veterinary"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3.89754722425,
-                    43.58014641946
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Cabinet Giraud",
-                "amenity": "veterinary"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3.85769012425,
-                    43.61455941831
+                    3.99943542425,
+                    43.65411461698
                 ]
             }
         },
@@ -485,36 +504,8 @@
             "type": "Feature",
             "properties": {
                 "amenity": "veterinary",
-                "name": "vetocia"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3.90147041076,
-                    43.62609258712
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "veterinary",
-                "name": "Clinique Vétérinaire"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    3.87973282425,
-                    43.56438901999
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "addr:city": "Vendargues",
-                "amenity": "veterinary",
-                "name": "Clinique des romarins"
+                "name": "Clinique des romarins",
+                "effectif": "3"
             },
             "geometry": {
                 "type": "Point",
@@ -528,13 +519,14 @@
             "type": "Feature",
             "properties": {
                 "amenity": "veterinary",
-                "name": "Cabinet vétérinaire"
+                "name": "Clinique Vétérinaire du Crès",
+                "effectif": "3"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    3.80266862425,
-                    43.64621061724
+                    3.94344542425,
+                    43.64124871741
                 ]
             }
         },
@@ -542,13 +534,13 @@
             "type": "Feature",
             "properties": {
                 "amenity": "veterinary",
-                "name": "Clinique vétérinaire des Garrigues"
+                "name": "Coucharrière Julia"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    3.81013512425,
-                    43.61447191831
+                    4.01378382425,
+                    43.62750121787
                 ]
             }
         },
@@ -569,14 +561,29 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Clinique Vétérinaire Les Patounes",
-                "amenity": "veterinary"
+                "amenity": "veterinary",
+                "name": "Okivet Millenaire",
+                "effectif": "3"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    3.92904152425,
-                    43.63715371755
+                    3.90023230970,
+                    43.61039904583
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "veterinary",
+                "name": "Olivier Bouzigues vétérinaire"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.83591102425,
+                    43.57932271950
                 ]
             }
         }

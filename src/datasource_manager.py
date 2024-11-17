@@ -70,7 +70,7 @@ def get_boundary(revenue_df, pop_df, filename = 'boundaries_clean.geojson'):
 
 def get_veto(filename='clinics_points.geojson'):
     veto_df = gpd.read_file(path_data + filename)
-    veto_df = veto_df[veto_df.amenity == 'veterinary'][['amenity', 'name', 'geometry']]
+    veto_df = veto_df[veto_df.amenity == 'veterinary'][['amenity', 'name', 'effectif', 'geometry']]
     veto_df['geometry'] = veto_df.geometry.centroid
     return veto_df
 
